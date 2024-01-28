@@ -1,0 +1,25 @@
+set_name.add(element) 
+fruits.add("mango")
+
+fruits.clear()
+
+fruits.copy() #shallow copy
+fruits=set()
+fruits={"a","b","c"}
+
+fruits.discard("apple")
+
+is_subset = fruits.issubset(colors)
+
+is_superset = colors.issuperset(fruits)
+
+removed_fruit = fruits.pop()
+
+fruits.remove("banana")
+
+combined = fruits.union(colors) 
+common = fruits.intersection(colors) 
+unique_to_fruits = fruits.difference(colors) 
+sym_diff = fruits.symmetric_difference(colors)
+
+fruits.update(["kiwi", "grape"]
