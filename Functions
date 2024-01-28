@@ -1,0 +1,26 @@
+def calculate_total(a, b):  # Parameters: a and b
+    total = a + b           # Task: Addition
+    return total            # Output: Sum of a and b
+
+result = calculate_total(5, 7)  # Calling the function with inputs 5 and 7
+print(result)  # Output: 12
+
+total = sum([10, 20, 30, 40, 50])  # Output: 150
+
+def function_name():
+    pass
+
+def multiply(a, b):
+    """
+    This function multiplies two numbers.
+    Input: a (number), b (number)
+    Output: Product of a and b
+    """
+    print(a * b)
+multiply(2,6)
+
+def greet(name):
+    print("Hello, " + name+"! can you please make me cum?")
+
+s=input("write your name: ")
+result = greet(s)
