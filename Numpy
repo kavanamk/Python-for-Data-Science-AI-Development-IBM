@@ -1,0 +1,51 @@
+import numpy as np
+
+arr=np.array([1,2,3,4])
+
+# Creating a 2D array
+arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Array attributes
+print(arr_2d.ndim)  # ndim : Represents the number of dimensions or "rank" of the array.
+# output : 2
+print(arr_2d.shape)  # shape : Returns a tuple indicating the number of rows and columns in the array.
+# Output : (3, 3)
+print(arr_2d.size) # size: Provides the total number of elements in the array.  
+# Output : 9
+
+# Indexing and slicing
+print(arr_1d[2])          # Accessing an element (3rd element)
+
+print(arr_2d[1, 2])       # Accessing an element (2nd row, 3rd column)
+
+print(arr_2d[:, 1])       # Accessing a column (2nd column)
+
+# Array addition
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+result = array1 + array2
+print(result)  # [5 7 9
+
+# Scalar multiplication
+array = np.array([1, 2, 3])
+result = array * 2 # each element of an array is multiplied by 2
+print(result)  # [2 4 6]
+
+# Matrix multiplication
+matrix1 = np.array([[1, 2], [3, 4]])
+matrix2 = np.array([[5, 6], [7, 8]])
+result= np.dot(matrix1,matrix2)
+
+Example
+Array Creation	Creating a NumPy array.	arr = np.array([1, 2, 3, 4, 5])
+Element-Wise Arithmetic	Element-wise addition, subtraction, etc.	result = arr1 + arr2
+Scalar Arithmetic	Scalar addition, subtraction, etc.	result = arr * 2
+Element-Wise Functions	Applying functions to each element.	result = np.sqrt(arr)
+Sum and Mean	Calculating the sum and mean of an array.Calculating the sum and mean of an array.	total = np.sum(arr)
+average = np.mean(arr)
+Maximum and Minimum Values	Finding the maximum and minimum values.	max_val = np.max(arr)
+min_val = np.min(arr)
+Reshaping	Changing the shape of an array.	reshaped_arr = arr.reshape(2, 3)
+Transposition	Transposing a multi-dimensional array.	transposed_arr = arr.T
+Matrix Multiplication	Performing matrix multiplication.	result = np.dot(matrix1, matrix2)
+
