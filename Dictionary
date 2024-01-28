@@ -1,0 +1,25 @@
+person["Country"] = "USA" # A new entry will be created. 
+person["city"] = "Chicago" # Update the existing value for the same key
+
+The `clear()` method empties the dictionary, removing all key-value pairs within it. After this operation, the dictionary is still accessible and can be used further.
+
+dict_name.clear() 
+
+Creates a shallow copy of the dictionary. The new dictionary contains the same key-value pairs as the original, but they remain distinct objects in memory.
+new_person = person.copy() 
+new_person = dict(person) # another way to create a copy of dictionary
+
+dict_name = {} #Creates an empty dictionary 
+person = { "name": "John", "age": 30, "city": "New York"}
+
+del person["Country"]
+
+info = list(person.items())
+
+#key existance
+
+keys_list = list(dict_name.keys()) 
+
+dict_name.update({key: value})
+
+dict_name.update({key: value})
