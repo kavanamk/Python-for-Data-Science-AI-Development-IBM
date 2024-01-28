@@ -1,0 +1,14 @@
+for number in range(1, 11):
+    print(number)
+
+for number in range(11):
+    print(number)
+
+fruits=["a","b","c"]
+for index,fruit in enumerate(fruits):
+    print(str(index)+" "+fruit)
+
+count = 1
+while count <= 10:
+    print(count)
+    count += 1
