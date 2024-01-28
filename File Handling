@@ -22,3 +22,28 @@ while True:
         break  # Stop when there are no more lines to read
     print(line)
 
+
+
+# Create a new file Example2.txt for writing
+with open('Example2.txt', 'w') as File1:
+    File1.write("This is line A\n")
+    File1.write("This is line B\n")
+    # File1 is automatically closed when the 'with' block exits
+
+# List of lines to write to the file
+Lines = ["This is line 1", "This is line 2", "This is line 3"]
+
+# Create a new file Example3.txt for writing
+with open('Example3.txt', 'w') as File2:
+    for line in Lines:
+        File2.write(line + "\n")
+    # File2 is automatically closed when the 'with' block exits
+
+# Data to append to the existing file
+new_data = "This is line C"
+
+# Open an existing file Example2.txt for appending
+with open('Example2.txt', 'a') as File1:
+    File1.write(new_data + "\n")
+    # File1 is automatically closed when the 'with' block exits
+
