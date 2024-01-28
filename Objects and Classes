@@ -79,3 +79,13 @@ car2 = Car("Honda", "Civic", "Red")
 # Accelerate the cars
 car1.accelerate(30)
 car2.accelerate(20)
+
+
+INHERITANCE:
+
+class Student(Person):
+  pass
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
