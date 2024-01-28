@@ -1,0 +1,23 @@
+import pandas as pd
+
+df= pd.read_csv("file.csv")
+
+A Series is a one-dimensional labeled array in Pandas. It can be thought of as a single column of data with labels or indices for each element. You can create a Series from various data sources, such as lists, NumPy arrays, or dictionaries
+Here's a basic example of creating a Series in Pandas:
+
+data=[1,2,3,4,5]
+s= pd.Series(data)
+print(s)
+
+import pandas as pd
+
+# Creating a DataFrame from a dictionary
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 35, 28],
+        'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']}
+
+df = pd.DataFrame(data)
+
+print(df.iloc[2])   # Access the third row by position
+print(df.loc[1])    # Access the second row by label
+
