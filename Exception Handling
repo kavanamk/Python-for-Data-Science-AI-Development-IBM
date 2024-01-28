@@ -1,0 +1,55 @@
+Aspect	Errors	Exceptions
+Origin	Errors are typically caused by the	Exceptions are usually a result of
+environment, hardware, or operating system.	problematic code execution within the program.
+Nature	Errors are often severe and can lead to	Exceptions are generally less severe and can
+program crashes or abnormal termination.	be caught and handled to prevent program
+termination.
+Handling	Errors are not usually caught or handled	Exceptions can be caught using try-except
+by the program itself.	blocks and dealt with gracefully, allowing
+the program to continue execution.
+Examples	Examples include “SyntaxError” due to	Examples include “ZeroDivisionError” when
+incorrect syntax or “NameError” when a	dividing by zero, or “FileNotFoundError” when
+variable is not defined.	attempting to open a non-existent file.
+Categorization	Errors are not classified into categories.	Exceptions are categorized into various
+classes, such as “ArithmeticError,” “IOError,”
+“ValueError,” etc., based on their nature
+
+
+result = 10 / 0 
+print(result)
+# Raises ZeroDivisionError
+
+num = int("abc")
+# Raises ValueError
+
+with open("nonexistent_file.txt", "r") as file:
+        content = file.read()   # Raises FileNotFoundError
+#file not found exception
+
+my_list = [1, 2, 3]
+value = my_list[1]  # No IndexError, within range
+missing = my_list[5]  # Raises IndexError
+#index error
+
+my_dict = {"name": "Alice", "age": 30}
+value = my_dict.get("city")  # No KeyError, using .get() method
+missing = my_dict["city"]  # Raises KeyError
+
+result = "hello" + 5   
+# Raises TypeError
+
+text = "example"
+length = len(text)  # No AttributeError, correct method usage
+missing = text.some_method()  # Raises AttributeError
+
+# using Try- except 
+try:
+    # Attempting to divide 10 by 0
+    result = 10 / 0
+except ZeroDivisionError:
+    # Handling the ZeroDivisionError and printing an error message
+    print("Error: Cannot divide by zero")
+# This line will be executed regardless of whether an exception occurred
+print("outside of try and except block")
+
+
