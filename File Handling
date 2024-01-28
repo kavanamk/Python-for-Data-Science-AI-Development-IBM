@@ -1,0 +1,24 @@
+file=open("file.txt", 'r')
+content=file.read()
+print(content)
+file.close()
+
+# Step 1: Open the file using 'with' in read ('r') mode
+with open('file.txt', 'r') as file:
+    # Step 2: Read the file content within the 'with' block
+    content = file.read()
+    
+    # Step 3: Process the content (e.g., print it)
+    print(content)
+
+# Step 4: The file is automatically closed when the 'with' block exits
+
+line1 = file.readline()  # Reads the first line
+line2 = file.readline()  # Reads the second line
+
+while True:
+    line = file.readline()
+    if not line:
+        break  # Stop when there are no more lines to read
+    print(line)
+
