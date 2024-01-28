@@ -1,0 +1,26 @@
+#In this reading, we delved into the most frequently used operator and the concept of conditional branching, which encompasses the utilization of if statements and if-else statements.
+age = 30
+if age == 30:
+    print("Old man")
+
+if age>= 20:
+    Print("Yes, the Age is greater than 20")
+
+if age >= 21:
+    print("You can enter the bar.")
+elif age >= 18:
+    print("You can watch a movie.")
+else:
+    print("Sorry, you cannot do either.")
+
+has_valid_id_card = True
+has_matching_fingerprint = True
+if has_valid_id_card and has_matching_fingerprint:
+    open_high_security_door()
+
+friend1_likes_comedy = True
+friend2_likes_action = False
+friend3_likes_drama = False
+if friend1_likes_comedy or friend2_likes_action or friend3_likes_drama:
+    choose a movie()
+
